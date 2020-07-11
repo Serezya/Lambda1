@@ -10,7 +10,13 @@ public class Main {
         // можно проверить делимое и делитель. Если =0, то предложить изменить данные.
         int c = calc.devide.apply(a, b);
         int k = calc.abs.apply(-5);
-        calc.println.accept(c);
-        calc.println.accept(k);
+        int mult = calc.multiply.apply(a,b);
+        boolean pos = calc.isPositive.test(-5);
+        int poow = calc.pow.apply(5);
+        calc.println.accept("Результат деления " + c);
+        calc.println.accept("Результат умножения " + mult);
+        calc.println.accept("Число по модулю " + k);
+        calc.println.accept(pos ? "Число положительное" : "Число отрицательное");
+        calc.println.accept("Число в квадрате " +poow);
     }
 }
